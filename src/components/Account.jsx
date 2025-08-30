@@ -47,7 +47,7 @@ function Account() {
     }
 
     return (
-        <div className="flex flex-col w-full bg-(--color-bg) box-border p-5 gap-10 ">
+        <div className="flex flex-col w-full bg-(--color-bg) basis-4/5 box-border p-5 gap-10 ">
             <div className="flex flex-col w-full gap-5 ">
                 <h1 className="text-(--color-text) font-bold text-[30px]">Personal Information</h1>
                 <div className="text-(--color-text) text-[18px] font-medium ">
