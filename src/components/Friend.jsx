@@ -155,7 +155,7 @@ function Friend() {
             {
               !error &&
               friends?.map(friend => (
-                <Friendbox id={friend.id} username={friend.username} />
+                <Friendbox key={friend.id} id={friend.id} username={friend.username} />
               )
               )
             }
@@ -190,7 +190,7 @@ function Friend() {
               {
                 !userError &&
                 users?.map(user => (
-                  <Userbox id={user.id} username={user.username} />
+                  <Userbox key={user.id} id={user.id} username={user.username} />
                 )
                 )
               }

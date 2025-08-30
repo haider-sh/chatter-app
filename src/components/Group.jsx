@@ -146,7 +146,7 @@ function Groups() {
                   recipient={group.recipient}
                   setSelected={handleGroupClick}
                   title={group.name}
-                  message={group.messages[group.messages.length - 1]}
+                  message={group.messages ? group.messages[group.messages.length - 1]: null}
                   unread={group.unread}
                 />
               )
