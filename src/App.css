@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+#root {
+  font-family: "Barlow", sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-text: #111827;
+  --color-text-secondary: #374151;
+  --color-border: #e5e7eb;
+  --color-accent: #5965DB;
+  --color-button: #E5E8FA;
+  --color-accent-hover: #646464;
+  --side-bar-bg: oklch(0.97 0.01 240);
+  --side-bar-color: oklch(0.22 0.02 245);
+}
+
+.dark {
+  --color-bg: #1e1e2f;
+  --color-bg-secondary: #2a2a3d;
+  --color-text: #d3d3d3;
+  --color-text-secondary: #d1d5db;
+  --color-border: #3f3f46;
+  --color-accent: #60a5fa;
+  --color-button: #2B2F4A;
+  --color-accent-hover: #adadad;
+  --side-bar-bg: oklch(0.2752 0.0241 246.25);
+  --side-bar-color: oklch(0.8585 0.006 239.83);
+}
