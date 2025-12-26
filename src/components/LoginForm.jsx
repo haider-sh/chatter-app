@@ -60,7 +60,7 @@ function LoginForm() {
         <div className="flex justify-center">Chatter</div>
         <img className="w-[50px] flex" src="/chat-icon.png" alt="Chatter icon" />
       </div>
-      <div className="flex flex-col text-(--side-bar-color) items-center rounded-[50px] bg-(--side-bar-bg) gap-10 w-2/5 p-10">
+      <div className="flex flex-col text-(--side-bar-color) items-center rounded-[50px] bg-(--side-bar-bg) gap-10w w-2/5 p-10">
         <h2 className="text-[34px]">Log in to Chatter</h2>
         <form className="flex flex-col items-center w-full gap-10 text-[20px]">
           <div className="flex w-9/10 justify-between items-center gap-10">

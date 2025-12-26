@@ -24,7 +24,7 @@ function Chat({ id, recipient }) {
     function incrementUnreadCount(id, message, date) {
         console.log(id);
         setChats(chats => chats.map(chat => {
-            console.log(chats);
+            console.log(chats); 
             if (chat.id === id) {
                 const newMessages = [...chat.messages, { content: message, created_at: date }];
                 return {
@@ -182,7 +182,6 @@ function Chat({ id, recipient }) {
     function handleFileClick() {
         fileRef.current?.click();
     }
-
 
     function handleFileChange(e) {
         const file = e.target.files[0];
