@@ -103,7 +103,7 @@ function GroupChat({ id, setSelected }) {
         return;
       }
 
-      const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/groups/${id}`,
+      const response = await fetch(`https://chatter-backend-z5x0.onrender.com/groups/${id}`,
         {
           headers: {
             "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -155,7 +155,7 @@ function GroupChat({ id, setSelected }) {
   }
 
   async function searchUsers() {
-    const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/groups/${id}?search=${searchUser}`,
+    const response = await fetch(`https://chatter-backend-z5x0.onrender.com/groups/${id}?search=${searchUser}`,
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -180,7 +180,7 @@ function GroupChat({ id, setSelected }) {
   }
 
   async function leaveGroup() {
-    const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/groups/${id}/exit`,
+    const response = await fetch(`https://chatter-backend-z5x0.onrender.com/groups/${id}/exit`,
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`

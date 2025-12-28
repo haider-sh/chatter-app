@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const URL = "https://chatter-backend-production-1d5f.up.railway.app/";
+const URL = "https://chatter-backend-z5x0.onrender.com/";
 const socket = io(URL, { autoConnect: false });
 
 socket.onAny((event, ...args) => {

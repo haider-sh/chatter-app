@@ -16,7 +16,7 @@ function Friend() {
   let { friends, setFriends } = useContext(AppContext);
 
   async function getFriends() {
-    const response = await fetch("https://chatter-backend-production-1d5f.up.railway.app/friends",
+    const response = await fetch("https://chatter-backend-z5x0.onrender.com/friends",
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -37,7 +37,7 @@ function Friend() {
   }
 
   async function getUsers() {
-    const response = await fetch("https://chatter-backend-production-1d5f.up.railway.app/friends/users",
+    const response = await fetch("https://chatter-backend-z5x0.onrender.com/friends/users",
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -58,7 +58,7 @@ function Friend() {
   }
 
   async function getOnlineUsers() {
-    const response = await fetch("https://chatter-backend-production-1d5f.up.railway.app/friends/online",
+    const response = await fetch("https://chatter-backend-z5x0.onrender.com/friends/online",
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -85,7 +85,7 @@ function Friend() {
   }, []);
 
   async function searchFriend() {
-    const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/friends?search=${search}`,
+    const response = await fetch(`https://chatter-backend-z5x0.onrender.com/friends?search=${search}`,
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -107,7 +107,7 @@ function Friend() {
   }
 
   async function searchUsers() {
-    const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/friends/users?search=${searchUser}`,
+    const response = await fetch(`https://chatter-backend-z5x0.onrender.com/friends/users?search=${searchUser}`,
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`

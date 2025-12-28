@@ -123,7 +123,7 @@ function Chat({ id, recipient }) {
                 setMessages([]);
                 return;
             }
-            const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/chats/${id}`,
+            const response = await fetch(`https://chatter-backend-z5x0.onrender.com/chats/${id}`,
                 {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem("token")}`

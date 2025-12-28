@@ -6,7 +6,7 @@ function Friendbox({ id, username }) {
 
     async function handleUnfriend() {
         if (buttonClicked) return;
-        const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/friends/${id}/unfriend`,
+        const response = await fetch(`https://chatter-backend-z5x0.onrender.com/friends/${id}/unfriend`,
             {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem("token")}`

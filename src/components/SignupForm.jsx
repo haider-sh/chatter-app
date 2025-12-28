@@ -22,7 +22,7 @@ function SignupForm() {
     else {
       setError("");
 
-      let response = await fetch("https://chatter-backend-production-1d5f.up.railway.app/signup", {
+      let response = await fetch("https://chatter-backend-z5x0.onrender.com/signup", {
         method: "POST",
         headers: {
           'Accept': 'application/json',

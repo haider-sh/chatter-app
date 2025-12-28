@@ -6,7 +6,7 @@ function Userbox({ id, username }) {
 
     async function handleAddFriend() {
         if (buttonClicked) return;
-        const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/friends/${id}/add`,
+        const response = await fetch(`https://chatter-backend-z5x0.onrender.com/friends/${id}/add`,
             {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem("token")}`

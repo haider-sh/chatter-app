@@ -24,7 +24,7 @@ function Account() {
             setError("One or more fields are empty");
             return;
         }
-        const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/updateInfo`,
+        const response = await fetch(`https://chatter-backend-z5x0.onrender.com/updateInfo`,
             {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem("token")}`,

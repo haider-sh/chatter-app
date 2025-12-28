@@ -14,7 +14,7 @@ function Conversations() {
   let { chats, setChats } = useContext(AppContext);
 
   async function getChats() {
-    const response = await fetch("https://chatter-backend-production-1d5f.up.railway.app/chats",
+    const response = await fetch("https://chatter-backend-z5x0.onrender.com/chats",
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -46,7 +46,7 @@ function Conversations() {
   }
 
   async function searchChat() {
-    const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/chats?search=${search}`,
+    const response = await fetch(`https://chatter-backend-z5x0.onrender.com/chats?search=${search}`,
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -67,7 +67,7 @@ function Conversations() {
   }
 
   async function newChat() {
-    const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/chats/new`,
+    const response = await fetch(`https://chatter-backend-z5x0.onrender.com/chats/new`,
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`

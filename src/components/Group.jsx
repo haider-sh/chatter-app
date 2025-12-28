@@ -15,7 +15,7 @@ function Groups() {
   let { groups, setGroups } = useContext(AppContext);
 
   async function getGroups() {
-    const response = await fetch("https://chatter-backend-production-1d5f.up.railway.app/groups",
+    const response = await fetch("https://chatter-backend-z5x0.onrender.com/groups",
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -59,7 +59,7 @@ function Groups() {
   }
 
   async function searchGroup() {
-    const response = await fetch(`https://chatter-backend-production-1d5f.up.railway.app/groups?search=${search}`,
+    const response = await fetch(`https://chatter-backend-z5x0.onrender.com/groups?search=${search}`,
       {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
